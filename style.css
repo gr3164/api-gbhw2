@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,body{
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100dvh;
+    background-color: darkgrey;
+}
+
+.slider{
+    position: relative;
+    z-index: 2;
+    background-color: crimson;
+    border: 2px solid #000;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.slider__line{
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all .3s ease;
+}
+
+.slider__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    min-width: 250px;
+    min-height: 250px;
+    background-color: aqua;
+}
+
+.btns{
+    display: flex;
+    gap: 20px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
+
+.btn:hover{
+    background-color: aquamarine;
+}
+
+.slider__dots{
+   display: flex;
+   gap: 6px;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
+
+.dot:hover{
+    background-color: aquamarine;
+}
+
+.active{
+    background-color: aqua;
+}
