@@ -1,4 +1,3 @@
-const images = document.querySelectorAll('.slider__item');
 const slider = document.querySelector('.slider');
 const sliderLine = document.querySelector('.slider__line');
 
@@ -57,7 +56,7 @@ next.addEventListener('click', ()=> {
     if(offset <= -(slider.offsetWidth * data.length)){
         offset = 0;
     }
-    sliderLine.style.left = offset + 'px'
+    sliderLine.style.left = offset + 'px';
     updateActiveDot();
 });
 
@@ -65,7 +64,7 @@ prev.addEventListener('click', ()=> {
     offset += slider.offsetWidth;
 
     if(offset > 0){
-        offset = -(slider.offsetWidth * (data.length - 1))   
+        offset = -(slider.offsetWidth * (data.length - 1));   
     }
   
     sliderLine.style.left = offset + 'px'

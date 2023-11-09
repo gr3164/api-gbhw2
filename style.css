@@ -21,8 +21,6 @@ html,body{
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
     min-height: 100dvh;
     background-color: darkgrey;
 }
@@ -92,5 +90,5 @@ html,body{
 }
 
 .active{
-    background-color: aqua;
+    background-color: aquamarine;
 }
